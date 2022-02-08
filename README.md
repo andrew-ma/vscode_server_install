@@ -27,12 +27,21 @@
 # Set the bash variable to what we copy and pasted
 VSCODE_COMMIT_ID='COPY_AND_PASTED_COMMIT_ID'
 
-# Download the vscode-server tar.gz file
-echo "DOWNLOAD LINK: https://update.code.visualstudio.com/commit:${VSCODE_COMMIT_ID}/server-linux-x64/stable"
-# EXAMPLE LINK:  https://update.code.visualstudio.com/commit:899d46d82c4c95423fb7e10e68eba52050e30ba3/server-linux-x64/stable
 
-# The vscode server files should be extracted in this directory:  $HOME/.vscode-server/bin/$VSCODE_COMMIT_ID
+# Download the vscode-server tar.gz file
+## (Linux):  https://update.code.visualstudio.com/commit:${VSCODE_COMMIT_ID}/server-linux-x64/stable
+## (Windows):  https://update.code.visualstudio.com/commit:${VSCODE_COMMIT_ID}/server-win32-x64/stable
+
+
+# EXAMPLE LINK (Linux):  https://update.code.visualstudio.com/commit:899d46d82c4c95423fb7e10e68eba52050e30ba3/server-linux-x64/stable
+# EXAMPLE LINK (Windows):  https://update.code.visualstudio.com/commit:5554b12acf27056905806867f251c859323ff7e9/server-win32-x64/stable
+
+
+# (Linux) The vscode server files should be extracted in this directory:  $HOME/.vscode-server/bin/${VSCODE_COMMIT_ID}
+# (Windows) The vscode server files should be extracted in this directory:  %userprofile%\.vscode-server\bin\${VSCODE_COMMIT_ID}
+
 ```
+
 
 
 ## To install Vscode Extensions on a host without internet access
